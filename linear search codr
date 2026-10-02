@@ -1,0 +1,11 @@
+# 4. Linear Search
+def linear_search(values, target):
+    for i, v in enumerate(values):
+        if v == target:
+            return i
+    return -1
+
+values = [29, 10, 14, 37, 13]
+target = 37
+print(linear_search(values, target))   # 3
+print(linear_search(values, 99))       # -1
